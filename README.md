@@ -32,6 +32,12 @@ O DocBook `PenseEmPython.xml` foi convertido para _markdown_ com a ferramenta Pa
 $ pandoc PenseEmPython.xml -f docbook -t markdown_github -o PenseEmPython.md
 ```
 
+A versão pdf foi criada com
+
+```bash
+pandoc PenseEmPython.xml -f docbook --latex-engine=xelatex -o PenseEmPython.pdf
+```
+
 Os arquivos _markdown_ separados por capítulo em [`recebido/docs/`](recebido/docs/) foram gerados a partir de `PenseEmPython.md` pelo script [`util/separar_capitulos.py`](util/separar_capitulos.py).
 
 A partir desse ponto, os ajustes nos capítulos foram feitos manualmente, com ajuda ocasional de scripts encontrados no diretório [`util/`](util/).
