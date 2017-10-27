@@ -32,7 +32,7 @@ O DocBook `PenseEmPython.xml` foi convertido para _markdown_ com a ferramenta Pa
 $ pandoc PenseEmPython.xml -f docbook -t markdown_github -o PenseEmPython.md
 ```
 
-A versão pdf foi criada com
+A [`versão em pdf`](recebido/docs/PenseEmPython.pdf) foi criada como comando seguinte:
 
 ```bash
 pandoc PenseEmPython.xml -f docbook --latex-engine=xelatex -o PenseEmPython.pdf
